@@ -6,9 +6,13 @@ import time
 import datetime
 
 
-# How to use it
-# python[3] genome_win_generate.py -i path_to_depth_file -l path_to_chr_length_file
-# -w window_size(default 500) -s step(default 250)
+""" How to use it
+ python[3] genome_win_generate.py -i path_to_depth_file -l path_to_chr_length_file
+ -w window_size(default 500) -s step(default 250)
+ 
+ Format of depth file containing four column (i.e. contig_name, position, male_depth and female_depth )
+ Format of length file containing two column (i.e. contig_name and chromosome_length)
+ """
 
 parser = argparse.ArgumentParser(
     description='Generates a sliding window depth file without overlap',

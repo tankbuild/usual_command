@@ -1,0 +1,5 @@
+1. Popoolation error to access jarfile
+You must use mpileup2sync.pl script or for use directly .jar file, you need absolute path :
+java -jar /usr/local/bioinfo/src/PoPoolation2/popoolation2_1201/mpileup2sync.jar
+
+

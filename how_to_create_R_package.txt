@@ -1,0 +1,16 @@
+Step by step to build a R package
+
+if meet roxygen2 install problem, try to run the two command
+    source("https://bioconductor.org/biocLite.R")
+    biocLite("Rhtslib",type="source")
+
+1. create a package project
+2. install.packages("devtools")
+3. install.packages("roxygen2")
+4. library("devtools")
+5. library("roxygen2")
+6. install_github("devtools", "hadley")
+7. library("hadley")
+8. configure build tools
+9. build&reload
+

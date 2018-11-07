@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/KMC/How_to_use_SLURM_KMC"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/KMC/KMC-v3.0.0/

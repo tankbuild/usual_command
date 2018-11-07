@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/LEfSe/How_to_use_SLURM_LEfSe"
+}
+
+prereq system/Python-2.7.15 system/R-3.4.3_bis
+
+prepend-path PATH /usr/local/bioinfo/src/LEfSe/lefse-1.0.8/:/usr/local/bioinfo/src/LEfSe/lefse-1.0.8/lefsebiom/
+prepend-path LD_LIBRARY_PATH /tools/R/R-3.4.3_bis/R-3.4.3/lib/

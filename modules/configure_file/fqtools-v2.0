@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/fqtools/How_to_use_SLURM_fqtools"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/fqtools/fqtools-v2.0/bin/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/fqtools/fqtools-v2.0/htslib/lib/

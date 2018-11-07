@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/MEME/How_to_use_SLURM_MEME"
+}
+
+
+prereq compiler/intel-2018.0.128 mpi/openmpi-2.1.2-intel2018.0.128 system/Python-2.7.15
+prepend-path PATH /usr/local/bioinfo/src/MEME/meme_4.12.0_MPI/bin/

@@ -1,0 +1,19 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Medaka/How_to_use_SLURM_Medaka"
+}
+
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/Medaka/medaka-0.3.0/venv/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

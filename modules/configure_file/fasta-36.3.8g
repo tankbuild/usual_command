@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/FASTA/How_to_use_SLURM_FASTA"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/FASTA/fasta-36.3.8g/bin/

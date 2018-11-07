@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/MECAT/How_to_use_SLURM_MECAT"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/MECAT/MECAT-d04bfa8/Linux-amd64/bin/:/usr/local/bioinfo/src/MECAT/MECAT-d04bfa8/DEXTRACTOR/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/MECAT/MECAT-d04bfa8/hdf5-1.8.15-patch1/lib/

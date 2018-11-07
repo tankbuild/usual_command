@@ -1,0 +1,20 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/IVA/How_to_use_SLURM_IVA"
+}
+
+if { [ module-info mode load ] } {
+  puts stdout "source /usr/local/bioinfo/src/IVA/iva-1.0.9/iva-1.0.9_env/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+
+prepend-path PATH /usr/local/bioinfo/src/IVA/iva-1.0.9/build/smalt-0.7.6-bin:/usr/local/bioinfo/src/IVA/iva-1.0.9/build/samtools-1.3:/usr/local/bioinfo/src/IVA/iva-1.0.9/build/MUMmer3.23:/usr/local/bioinfo/src/IVA/iva-1.0.9/build/kmc-2.3.0:/usr/local/bioinfo/src/IVA/iva-1.0.9/iva-1.0.9_env/bin/
+

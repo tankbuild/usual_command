@@ -1,0 +1,31 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/GROMACS/How_to_use_SLURM_GROMACS"
+}
+
+
+
+prereq module load compiler/gcc-7.2.0 mpi/openmpi-2.1.2
+
+#if { [ module-info mode load ] } {
+#  puts stdout ". /usr/local/bioinfo/src/GROMACS/gromacs-2018.1/bin/GMXRC;"
+#} }
+
+set GROMACSDIR /usr/local/bioinfo/src/GROMACS/gromacs-2018.1/
+
+setenv GROMACSDIR $GROMACSDIR
+prepend-path PATH $GROMACSDIR/bin
+prepend-path GMXBIN $GROMACSDIR/bin
+prepend-path LD_LIBRARY_PATH $GROMACSDIR/lib
+prepend-path GMXLDLIB $GROMACSDIR/lib
+prepend-path GMXMAN $GROMACSDIR/man
+prepend-path MANPATH $GROMACSDIR/man
+prepend-path GMXDATA $GROMACSDIR/share
+

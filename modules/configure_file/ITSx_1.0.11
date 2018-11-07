@@ -1,0 +1,13 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/ITSx/How_to_use_SLURM_ITSx"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+prereq  bioinfo/hmmer-3.1b2
+
+prepend-path PATH /usr/local/bioinfo/src/ITSx/ITSx_1.0.11

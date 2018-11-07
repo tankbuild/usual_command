@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/MetaMaps/How_to_use_SLURM_MetaMaps"
+}
+
+
+prereq compiler/gcc-7.2.0
+
+prepend-path PATH /usr/local/bioinfo/src/MetaMaps/MetaMaps-1cd2972/
+prepend-path LD_LIBRARY_PATH /tools/libraries/Boost/boost_1_67_0/lib/

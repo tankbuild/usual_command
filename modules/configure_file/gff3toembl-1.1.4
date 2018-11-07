@@ -1,0 +1,24 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/gff3toembl/How_to_use_SLURM_gff3toembl"
+}
+
+
+prereq bioinfo/genometools-1.5.10
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/gff3toembl/gff3toembl-1.1.4/gff3toembl-1.1.4_venv/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+
+
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/GenomeTools/genometools-1.5.10/lib/

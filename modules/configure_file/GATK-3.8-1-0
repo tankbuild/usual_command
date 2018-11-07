@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/GATK/How_to_use_SLURM_GATK"
+}
+
+
+
+setenv GATK_HOME /usr/local/bioinfo/src/GATK/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef
+setenv CLASSPATH /usr/local/bioinfo/src/GATK/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef

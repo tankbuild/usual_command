@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/GenomeThreader/How_to_use_SLURM_GenomeThreader"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/GenomeThreader/GenomeThreader-1.7.1/bin/
+setenv BSSMDIR /usr/local/bioinfo/src/GenomeThreader/GenomeThreader-1.7.1/bin/bssm
+setenv GTHDATADIR /usr/local/bioinfo/src/GenomeThreader/GenomeThreader-1.7.1/bin/gthdata

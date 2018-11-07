@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/metaBIT/How_to_use_SLURM_metaBIT"
+}
+
+prereq system/Python-2.7.15 system/R-3.4.3_bis bioinfo/bowtie2-2.2.9 bioinfo/samtools-1.8  bioinfo/KronaTools-2.7
+
+prepend-path PATH /usr/local/bioinfo/src/metaBIT/metabit-24cb3ee/
+prepend-path LD_LIBRARY_PATH /tools/R/R-3.4.3_bis/R-3.4.3/lib/

@@ -1,0 +1,20 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/HTSeq/How_to_use_SLURM_HTSeq"
+}
+
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/HTSeq/HTSeq-0.9.1/venv_HTSeq-0.9.1/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+

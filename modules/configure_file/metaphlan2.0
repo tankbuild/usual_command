@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/MetaPhlAn2/How_to_use_SLURM_MetaPhlAn2"
+}
+
+prereq system/Python-2.7.15
+
+prepend-path PATH /usr/local/bioinfo/src/MetaPhlAn2/metaphlan2.0/:/usr/local/bioinfo/src/MetaPhlAn2/metaphlan2.0/utils/

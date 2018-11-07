@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/JELLYFISH/How_to_use_SLURM_JELLYFISH"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/JELLYFISH/jellyfish-1.1.11/bin/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/JELLYFISH/jellyfish-1.1.11/lib/
+prepend-path MANPATH /usr/local/bioinfo/src/JELLYFISH/jellyfish-1.1.11/share/man/
+prepend-path PKG_CONFIG_PATH usr/local/bioinfo/src/JELLYFISH/jellyfish-1.1.11/lib/pkgconfig/

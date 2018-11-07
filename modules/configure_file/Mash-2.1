@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Mash/How_to_use_SLURM_Mash"
+}
+
+
+prereq system/R-3.4.3 compiler/gcc-7.2.0
+prepend-path PATH /usr/local/bioinfo/src/Mash/Mash-2.1/bin/

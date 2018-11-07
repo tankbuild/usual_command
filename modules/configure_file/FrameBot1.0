@@ -1,0 +1,14 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/FrameBot/How_to_use_SLURM_FrameBot"
+}
+
+
+setenv FRAME_HOME /usr/local/bioinfo/src/FrameBot/FrameBot1.0/dist/

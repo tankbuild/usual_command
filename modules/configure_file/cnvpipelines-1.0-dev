@@ -1,0 +1,23 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Cnvpipelines/How_to_use_SLURM_Cnvpipelines"
+}
+
+
+prereq system/Miniconda3-4.4.10
+
+if { [ module-info mode load ] } {
+  puts stdout "source activate cnvpipelines-1.0-dev;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "source deactivate;"
+}
+
+setenv CNV_HOME	/usr/local/bioinfo/src/Cnvpipelines/cnvpipelines-1.0-dev
+setenv PERL5LIB	/usr/local/bioinfo/src/Miniconda/Miniconda3-4.4.10/envs/cnvpipelines-1.0-dev/lib/perl5/

@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/DLCpar/How_to_use_SLURM_DLCpar"
+}
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/DLCpar/dlcpar-1.0/venv_dlcpar-1.0/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

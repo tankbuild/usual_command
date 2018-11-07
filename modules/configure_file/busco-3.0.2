@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/BUSCO/How_to_use_SLURM_BUSCO"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+prereq	system/Python-3.6.3
+prereq	bioinfo/augustus-3.3
+
+
+prepend-path PATH /usr/local/bioinfo/src/BUSCO/busco-3.0.2/scripts/
+
+setenv AUGUSTUS_CONFIG_PATH /usr/local/bioinfo/src/Augustus/augustus-3.3/config/

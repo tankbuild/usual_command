@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/d2SBin/How_to_use_SLURM_d2SBin"
+}
+
+prereq system/Python-2.7.2
+
+prepend-path PATH /usr/local/bioinfo/src/d2SBin/d2SBin-v1.0/

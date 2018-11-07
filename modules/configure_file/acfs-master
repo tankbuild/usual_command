@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/ACFS/How_to_use_SLURM_ACFS"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/ACFS/acfs-master/:/usr/local/bioinfo/src/ACFS/acfs-master/bwa-0.7.3a/
+
+

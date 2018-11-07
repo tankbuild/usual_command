@@ -1,0 +1,13 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/bwa/How_to_use_SLURM_bwa"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/bwa/bwa-0.7.15

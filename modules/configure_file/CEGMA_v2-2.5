@@ -1,0 +1,20 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/CEGMA/How_to_use_SLURM_CEGMA"
+}
+
+
+prereq  bioinfo/geneid-v1.4.4 bioinfo/wise2.4.1 bioinfo/ncbi-blast-2.2.29+ bioinfo/hmmer-3.1b2
+
+prepend-path PATH /usr/local/bioinfo/src/CEGMA/CEGMA_v2-2.5/bin/
+setenv CEGMA /usr/local/bioinfo/src/CEGMA/CEGMA_v2-2.5/
+setenv CEGMATMP /usr/local/bioinfo/src/CEGMA/CEGMA_v2-2.5/
+prepend-path PERL5LIB /usr/local/bioinfo/src/CEGMA/CEGMA_v2-2.5/lib/
+

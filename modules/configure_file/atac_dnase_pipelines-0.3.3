@@ -1,0 +1,22 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/atac_dnase_pipelines/How_to_use_SLURM_atac_dnase_pipelines"
+}
+
+
+prereq system/Miniconda3-4.4.10 bioinfo/BigDataScript_v0.99999e_forked
+
+if { [ module-info mode load ] } {
+  puts stdout ". activate bds_atac;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout ". deactivate;"
+}
+
+prepend-path PERL5LIB /usr/local/bioinfo/src/Miniconda/Miniconda3-4.4.10/envs/bds_atac/lib/perl5/5.22.0/:/usr/local/bioinfo/src/Miniconda/Miniconda3-4.4.10/envs/bds_atac/lib/perl5/5.22.0/x86_64-linux-thread-multi/

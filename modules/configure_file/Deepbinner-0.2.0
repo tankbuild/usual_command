@@ -1,0 +1,19 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Deepbinner/How_to_use_SLURM_Deepbinner"
+}
+
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/Deepbinner/Deepbinner-0.2.0/Deepbinner-0.2.0_venv/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

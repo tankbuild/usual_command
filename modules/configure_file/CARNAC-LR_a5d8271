@@ -1,0 +1,14 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/CARNAC-LR/How_to_use_SLURM_CARNAC-LR"
+}
+
+prereq compiler/gcc-7.2.0
+prepend-path PATH /usr/local/bioinfo/src/CARNAC-LR/CARNAC-LR_a5d8271/:/usr/local/bioinfo/src/CARNAC-LR/CARNAC-LR_a5d8271/scripts/

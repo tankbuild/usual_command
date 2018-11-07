@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/cutadapt/How_to_use_SLURM_cutadapt"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/cutadapt/cutadapt-1.14/venv_python-2.7.2/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+
+

@@ -1,0 +1,19 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/DESMAN/How_to_use_SLURM_DESMAN"
+}
+
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/DESMAN/DESMAN-v2.0_venv/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/BEDOPS/How_to_use_SLURM_BEDOPS"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/BEDOPS/bedops-v2.4.35/bin/

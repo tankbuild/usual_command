@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/ecoPCR/How_to_use_SLURM_ecoPCR"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/ecoPCR/ecopcr-v1.0.0/src/:/usr/local/bioinfo/src/ecoPCR/ecopcr-v1.0.0/tools/

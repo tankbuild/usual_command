@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Circos/How_to_use_SLURM_Circos"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Circos/circos-0.69-6/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/binlinks/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/bundlelinks/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/calcdatarange/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/categoryviewer/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/clustal2link/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/colorinterpolate/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/connectogram:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/convertlinks/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/filterlinks/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/maketutorialimages/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/matrix/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/orderchr/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/randomdata/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/randomlinks/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/resample/bin/:/usr/local/bioinfo/src/Circos/circos-0.69-6/circos-tools-0.22/tools/tableviewer/bin/

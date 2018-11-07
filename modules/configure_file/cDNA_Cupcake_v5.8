@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/cDNA_Cupcake/How_to_use_SLURM_cDNA_Cupcake"
+}
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/cDNA_Cupcake/cDNA_Cupcake-cupcake_v5.8/cDNA_Cupcake-v5.8_venv/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

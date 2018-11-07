@@ -1,0 +1,23 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/BRAKER/How_to_use_SLURM_BRAKER"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/BRAKER/BRAKER-2.1.2/scripts/:/usr/local/bioinfo/src/Augustus/augustus-3.3.1/bin/:/usr/local/bioinfo/src/Augustus/augustus-3.3.1/scripts/:/usr/local/bioinfo/src/samtools/samtools-1.8/:/usr/local/bioinfo/src/GenomeThreader/GenomeThreader-1.7.1/bin/:/usr/local/bioinfo/src/NCBI_Blast+/ncbi-blast-2.6.0+/bin/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/Bamtools/bamtools-2.5.0/lib64/
+setenv BAMTOOLS_PATH /usr/local/bioinfo/src/Bamtools/bamtools-2.5.0/bin/
+setenv AUGUSTUS_BIN_PATH /usr/local/bioinfo/src/Augustus/augustus-3.3.1/bin/
+setenv AUGUSTUS_SCRIPTS_PATH /usr/local/bioinfo/src/Augustus/augustus-3.3.1/scripts/
+setenv AUGUSTUS_CONFIG_PATH /usr/local/bioinfo/src/Augustus/augustus-3.3.1/config/
+setenv SAMTOOLS_PATH /usr/local/bioinfo/src/samtools/samtools-1.8/
+setenv GENEMARK_PATH /usr/local/bioinfo/src/GeneMark/GeneMark-v4.33/gmes_petap/
+setenv BLAST_PATH /usr/local/bioinfo/src/NCBI_Blast+/ncbi-blast-2.6.0+/bin/

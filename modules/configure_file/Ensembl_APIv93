@@ -1,0 +1,28 @@
+#%Module1.0###############################################################
+##
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Ensembl_API/How_to_use_SLURM_Ensembl_API"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+prereq bioinfo/tabix-0.2.5
+
+
+set ENSEMBL_SRC /usr/local/bioinfo/src/Ensembl_API
+set ENSEMBL_DIR $ENSEMBL_SRC/Ensembl_APIv93
+
+prepend-path PATH $ENSEMBL_DIR/bin
+prepend-path PERL5LIB $ENSEMBL_DIR/bioperl-1.6.924
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl-compara/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl-variation/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl-funcgen/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl-io/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensemblgenomes-api/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/ensembl-vep/modules
+prepend-path PERL5LIB $ENSEMBL_DIR/Bio-DB-HTS/lib
+

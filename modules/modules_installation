@@ -1,0 +1,30 @@
+# install tcl and tcl-dev
+sudo apt-get install tcl
+sudo apt-get install tcl-dev
+sudo apt-get install python-sphinx
+
+# Download module
+https://github.com/cea-hpc/modules.git
+cd modules
+sudo ./configure && make && make install
+
+# copy initial modules script to /etc/profile.d
+sudo ln -s /usr/local/Modules/init/profile.sh /etc/profile.d/modules.sh
+sudo ln -s /usr/local/Modules/init/profile.csh /etc/profile.d/modules.csh
+
+# making configure file
+
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/NCBI_Blast/How_to_use_SLURM_NCBI_Blast"
+}
+
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/NCBI_Blast/blast-2.2.26/bin/

@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/OMBlast/How_to_use_SLURM_OMBlast"
+}
+
+
+
+setenv OMBLAST_HOME /usr/local/bioinfo/src/OMBlast/OMBlast-v1.0/
+setenv CLASSPATH /usr/local/bioinfo/src/OMBlast/OMBlast-v1.0/bin:/usr/local/bioinfo/src/OMBlast/OMBlast-v1.0/lib/:/usr/local/bioinfo/src/OMBlast/OMBlast-v1.0/

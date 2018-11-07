@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/phyx/How_to_use_SLURM_phix"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/phyx/phyx-vf7f3e98/bin/

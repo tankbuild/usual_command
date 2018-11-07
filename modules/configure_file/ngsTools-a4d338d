@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/ngsTools/How_to_use_SLURM_ngsTools"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/angsd/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/angsd/scripts/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsSim/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsF/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsPopGen/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsPopGen/scripts/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsUtils/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsDist/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsF-HMM/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsF-HMM/scripts/:/usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/ngsLD/:vngsLD/scripts/
+
+setenv NGSTOOLS /usr/local/bioinfo/src/ngsTools/ngsTools-a4d338d/

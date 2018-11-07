@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Nanopolish/How_to_use_SLURM_Nanopolish"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Nanopolish/nanopolish-0.9.0/nanopolish/

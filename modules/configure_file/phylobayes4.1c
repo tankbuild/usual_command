@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/PhyloBayes/How_to_use_SLURM_PhyloBayes"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/PhyloBayes/phylobayes4.1c/data/

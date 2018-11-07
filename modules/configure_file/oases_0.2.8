@@ -1,0 +1,22 @@
+#%Module1.0###############################################################
+##
+
+
+
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Oases/How_to_use_SLURM_Oases"
+}
+
+
+module-verbosity off
+
+prereq bioinfo/velvet_1.2.10 system/Python-2.7.2
+
+prepend-path PATH /usr/local/bioinfo/src/Oases/oases_0.2.8/:/usr/local/bioinfo/src/Oases/oases_0.2.8/scripts/

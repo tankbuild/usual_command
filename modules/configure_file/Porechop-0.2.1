@@ -1,0 +1,20 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Porechop/How_to_use_SLURM_Porechop"
+}
+
+
+prereq compiler/gcc-7.2.0
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/Porechop/Porechop-0.2.1/venv-0.2.1/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

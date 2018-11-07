@@ -1,0 +1,13 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/RDP_Classifier/How_to_use_SLURM_RDP_Classifier"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+setenv RDP_CLASSIFIER_HOME	/usr/local/bioinfo/src/RDP_Classifier/rdp_classifier_2.12/dist/
+prepend-path	CLASSPATH	/usr/local/bioinfo/src/RDP_Classifier/rdp_classifier_2.12/dist/

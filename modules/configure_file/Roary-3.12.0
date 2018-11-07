@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Roary/How_to_use_SLURM_Roary"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Roary/Roary-3.12.0/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/parallel-20160722/src:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/bedtools2/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/cd-hit-v4.6.8-2017-0621:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/prank-msa-master/src:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/ncbi-blast-2.6.0+/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mcl-14-137/src/shmcl:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mcl-14-137/src/alien/oxygen/src:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/fasttree:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mafft-7.310-without-extensions/build/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mafft-7.310-without-extensions/build/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/fasttree:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mcl-14-137/src/alien/oxygen/src:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/mcl-14-137/src/shmcl:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/ncbi-blast-2.6.0+/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/prank-msa-master/src:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/cd-hit-v4.6.8-2017-0621:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/bedtools2/bin:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/parallel-20160722/src
+
+prepend-path PERL5LIB /usr/local/bioinfo/src/Roary/Roary-3.12.0/lib:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/bedtools2/lib:/usr/local/bioinfo/src/Roary/Roary-3.12.0/build/bedtools2/lib

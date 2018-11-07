@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the nfcore-rnaseq nextflow workflow  environment"
+
+
+module load system/Java8
+module load system/singularity-2.5.1
+module load bioinfo/Nextflow-v0.32.0
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/NextflowWorkflows/How_to_use_SLURM_NextflowWorkflows"
+}
+setenv NXF_ASSETS /usr/local/bioinfo/src/NextflowWorkflows
+setenv NXF_SINGULARITY_CACHEDIR /usr/local/bioinfo/src/NextflowWorkflows/singularity-img/
+

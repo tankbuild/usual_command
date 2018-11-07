@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/msBayes/How_to_use_SLURM_msBayes"
+}
+
+prereq system/R-3.4.3
+
+prepend-path PATH /usr/local/bioinfo/src/msBayes/msbayes-20140305/bin/

@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/OrthoFinder/How_to_use_SLURM_OrthoFinder"
+}
+
+prereq bioinfo/ncbi-blast-2.6.0+ bioinfo/fastme-2.1.6.1 bioinfo/dlcpar-1.0 bioinfo/mcl-14-137 bioinfo/diamond-v0.9.22
+
+prepend-path PATH /usr/local/bioinfo/src/OrthoFinder/OrthoFinder-2.2.3/:/usr/local/bioinfo/src/OrthoFinder/OrthoFinder-2.2.3/tools/

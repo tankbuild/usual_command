@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+
+
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Pilon/How_to_use_SLURM_Pilon"
+}
+
+setenv PILON /usr/local/bioinfo/src/Pilon/pilon-v1.22/pilon-1.22.jar
+prepend-path	PATH	/usr/local/bioinfo/src/Pilon/pilon-v1.22/

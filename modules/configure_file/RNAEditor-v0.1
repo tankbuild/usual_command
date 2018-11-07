@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/RNAEditor/How_to_use_SLURM_RNAEditor"
+}
+
+
+prereq system/Python-3.6.3_shared
+prepend-path PATH /usr/local/bioinfo/src/RNAEditor/RNAEditor-v0.1/:/usr/local/bioinfo/src/RNAEditor/RNAEditor-v0.1/scripts/

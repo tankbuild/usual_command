@@ -1,0 +1,21 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/PICRUSt2/How_to_use_SLURM_PICRUSt2"
+}
+
+
+prereq compiler/gcc-7.2.0 system/Miniconda3-4.4.10
+
+if { [ module-info mode load ] } {
+  puts stdout "source activate picrust2-2.0.3-b_env;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "source deactivate;"
+}
+

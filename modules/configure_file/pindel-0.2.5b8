@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Pindel/How_to_use_SLURM_Pindel"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Pindel/pindel-0.2.5b8/

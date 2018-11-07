@@ -1,0 +1,20 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/MultiQC/How_to_use_SLURM_MultiQC"
+}
+
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/MultiQC/venv_multiqc-v1.5/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+

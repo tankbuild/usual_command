@@ -1,0 +1,22 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/QUAST/How_to_use_SLURM_QUAST"
+}
+
+
+
+prereq system/R-3.4.3
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/QUAST/quast-5.0.0rc1_env/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}
+

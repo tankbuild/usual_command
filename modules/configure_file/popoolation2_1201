@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/PoPoolation2/How_to_use_SLURM_PoPoolation2"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/PoPoolation2/popoolation2_1201/:/usr/local/bioinfo/src/PoPoolation2/popoolation2_1201/export/:/usr/local/bioinfo/src/PoPoolation2/popoolation2_1201/indel_filtering/

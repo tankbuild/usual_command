@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/WuBlast/How_to_use_SLURM_WuBlast"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/WuBlast/WuBlast2.0/:/usr/local/bioinfo/src/WuBlast/WuBlast2.0/filter/
+
+setenv BLASTFILTER /usr/local/bioinfo/src/WuBlast/WuBlast2.0/filter
+setenv BLASTMAT	/usr/local/bioinfo/src/WuBlast/WuBlast2.0/matrix

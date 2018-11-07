@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/TreeMix/How_to_use_SLURM_TreeMix"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/TreeMix/treemix-1.13/bin/

@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Genewise/How_to_use_SLURM_Genewise"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Genewise/wise2.4.1/src/bin/
+setenv WISECONFIGDIR /usr/local/bioinfo/src/Genewise/wise2.4.1/wisecfg/

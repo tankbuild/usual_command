@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/simuPOP/How_to_use_SLURM_simupop"
+}
+
+
+if { [ module-info mode load ] } {
+  puts stdout ". /usr/local/bioinfo/src/simuPOP/simupop-1.1.8.3/venv_python-3.4.3/bin/activate;"
+} elseif { [ module-info mode remove ] } {
+  puts stdout "deactivate;"
+}

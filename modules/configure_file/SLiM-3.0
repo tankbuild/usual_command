@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/SLiM/How_to_use_SLURM_SLiM"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/SLiM/SLiM-3.0/SLiM_build/

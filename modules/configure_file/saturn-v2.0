@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Saturn/How_to_use_SLURM_Saturn"
+}
+
+
+prereq system/R-3.4.3 system/parallel-20180122
+
+prepend-path PATH /usr/local/bioinfo/src/Saturn/saturn-v2.0/

@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/WiggleTools/How_to_use_SLURM_WiggleTools"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/WiggleTools/WiggleTools-1.2.2/bin/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/LibBigWig/libBigWig-0.4.2/lib/:/usr/local/bioinfo/src/WiggleTools/WiggleTools-1.2.2/htslib/

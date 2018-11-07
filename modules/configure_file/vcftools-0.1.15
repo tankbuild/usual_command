@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/VCFtools/How_to_use_SLURM_VCFtools"
+}
+
+prereq bioinfo/tabix-0.2.5
+
+prepend-path PATH /usr/local/bioinfo/src/VCFtools/vcftools-0.1.15/bin/
+prepend-path PERL5LIB /usr/local/bioinfo/src/VCFtools/vcftools-0.1.15/src/perl/

@@ -1,0 +1,17 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/GenomeSTRiP/How_to_use_SLURM_GenomeSTRiP"
+}
+
+prereq system/R-3.4.3 bioinfo/samtools-1.4 bioinfo/tabix-0.2.5
+
+prepend-path PATH /usr/local/bioinfo/src/GenomeSTRiP/svtoolkit_2.00.1774/bwa/
+prepend-path LD_LIBRARY_PATH /usr/local/bioinfo/src/GenomeSTRiP/svtoolkit_2.00.1774/bwa/
+setenv SV_DIR /usr/local/bioinfo/src/GenomeSTRiP/svtoolkit_2.00.1774/

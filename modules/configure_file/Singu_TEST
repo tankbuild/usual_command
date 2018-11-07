@@ -1,0 +1,18 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Singu_test/How_to_use_SLURM_Singu_test"
+}
+
+
+set user $env(USER)
+prepend-path PATH /usr/local/bioinfo/src/Singu_test/singularity-2.5.1/build/bin/
+setenv SINGULARITY_DISABLE_CACHE True
+setenv SINGULARITY_BINDPATH "/save/$user,/work/$user"
+#setenv("SINGULARITY_BINDPATH","/save/$USER,/work/$USER")

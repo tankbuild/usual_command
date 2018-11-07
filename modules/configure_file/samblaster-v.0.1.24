@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/samblaster/How_to_use_SLURM_samblaster"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/samblaster/samblaster-v.0.1.24/

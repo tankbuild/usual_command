@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Strelka/How_to_use_SLURM_Strelka"
+}
+
+prereq system/Python-2.7.2
+
+prepend-path PATH /usr/local/bioinfo/src/Strelka/strelka-2.9.9.release_src/bin/

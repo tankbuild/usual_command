@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Salmon/How_to_use_SLURM_Salmon"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Salmon/salmon-0.10.0_linux_x86_64/bin/

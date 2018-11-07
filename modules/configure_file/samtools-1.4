@@ -1,0 +1,14 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/samtools/How_to_use_SLURM_samtools"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/samtools/samtools-1.4
+prepend-path LD_LIBRARY_PATH  /usr/local/bioinfo/src/samtools/samtools-1.4/:/usr/local/bioinfo/src/samtools/samtools-1.4/htslib-1.4/

@@ -7,3 +7,7 @@ cat channelcatfish_len.tsv | sort -t $'\t' -k2,2nr > channelcatfish_len_sorted.t
 # linux system checking commands
 lsb_release -a
 cat /etc/*release
+
+# Set path for software
+# set PATH for anaconda
+export PATH="/home/mwen/anaconda3/bin:$PATH"

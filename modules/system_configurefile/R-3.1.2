@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+    global name version prefix man_path
+
+    puts stderr "\tSee How_to_use file: /tools/R/How_to_use_SLURM_R"
+}
+
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+prepend-path PATH /tools/R/R-3.1.2/bin/

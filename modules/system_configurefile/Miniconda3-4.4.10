@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/Miniconda/How_to_use_SLURM_Miniconda"
+}
+
+
+
+prepend-path PATH /usr/local/bioinfo/src/Miniconda/Miniconda3-4.4.10/bin/

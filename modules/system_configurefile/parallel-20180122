@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+
+
+
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/parallel/How_to_use_SLURM_parallel"
+}
+prepend-path PATH /tools/others_tools/parallel/parallel-20180122/bin/

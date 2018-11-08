@@ -1,0 +1,15 @@
+#%Module1.0###############################################################
+##
+
+module-whatis   "loads the [module-info name] environment"
+
+
+
+
+proc ModulesHelp { } {
+   puts stderr "\tSee How_to_use file: /usr/local/bioinfo/src/SWIG/How_to_use_SLURM_SWIG"
+}
+
+
+
+prepend-path PATH /tools/others_tools/SWIG/swig-3.0.12/:/tools/others_tools/SWIG/swig-3.0.12/bin/

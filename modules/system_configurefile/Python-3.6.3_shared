@@ -1,0 +1,16 @@
+#%Module1.0###############################################################
+##
+
+proc ModulesHelp { } {
+    global name version prefix man_path
+
+    puts stderr "\t[module-info name] - loads the $name environment"
+    puts stderr "\tThe following env variables are set:"
+    puts stderr "\t\t\PATH"
+}
+
+
+module-whatis   "loads the [module-info name] environment"
+
+prepend-path    PATH    /tools/python/3.6.3_shared/bin
+prepend-path LD_LIBRARY_PATH	/tools/python/3.6.3_shared/lib/

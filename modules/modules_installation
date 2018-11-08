@@ -15,6 +15,7 @@ sudo ln -s /usr/local/Modules/init/profile.csh /etc/profile.d/modules.csh
 # to run module
 #Another approach may be to get the Modules initialization script sourced from the shell configuration startup file. For instance following line could be added to the end of the ~/.bashrc file if running Bash shell:
 source PREFIX/init/bash
+example "source /usr/local/Modules/init/bash"
 
 # making configure file
 

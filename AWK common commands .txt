@@ -27,3 +27,6 @@ cat file.txt | awk '$1 == "contigs_name" {print}' | awk '{ sum += $4 } END { if 
 awk 'NR == 1 || $2 < min {line = $0; min = $2}END{print line}' potential_sexspe_seqs_length.txt
 
 awk 'NR == 1 {line = $0; min = $3} NR > 1 && $3 < min {line = $0; min = $3}END{print line}' file.txt
+
+#add a record number to first field
+cat channel_length.tsv | awk -F $'\t' 'BEGIN {OFS=FS} {print NR,$1,$2}' > channel_length_file.tsv

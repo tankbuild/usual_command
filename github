@@ -1,0 +1,5 @@
+How to generate a ssh key?
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+How do I remove the passphrase for the SSH key without having to create a new key?
+ssh-keygen -p -P oldpassphrase -N "" -f ~/.ssh/id_rsa

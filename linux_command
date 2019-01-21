@@ -17,6 +17,7 @@ sftp://mwen@genologin.toulouse.inra.fr/work/mwen/
 
 # connect virtual system to computer folder
 1. goto control/settings/share folder to set a host_share folder
+2. sudo apt-get install virtualbox-guest-additions-iso2. 
 2. sudo groupadd vboxsf
 3. sudo usermod -aG vboxsf mwen
 2. sudo mount -t vboxsf host_share guest_share

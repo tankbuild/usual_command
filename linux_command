@@ -16,4 +16,7 @@ export PATH="/home/mwen/anaconda3/bin:$PATH"
 sftp://mwen@genologin.toulouse.inra.fr/work/mwen/
 
 # connect virtual system to computer folder
-sudo mount -t vboxsf host_share guest_share
+1. goto control/settings/share folder to set a host_share folder
+2. sudo groupadd vboxsf
+3. sudo usermod -aG vboxsf mwen
+2. sudo mount -t vboxsf host_share guest_share

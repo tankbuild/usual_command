@@ -11,3 +11,6 @@ cat /etc/*release
 # Set path for software
 # set PATH for anaconda
 export PATH="/home/mwen/anaconda3/bin:$PATH"
+
+# make a shortcut for remote server account directory
+sftp://mwen@genologin.toulouse.inra.fr/work/mwen/

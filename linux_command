@@ -14,3 +14,6 @@ export PATH="/home/mwen/anaconda3/bin:$PATH"
 
 # make a shortcut for remote server account directory
 sftp://mwen@genologin.toulouse.inra.fr/work/mwen/
+
+# connect virtual system to computer folder
+sudo mount -t vboxsf host_share guest_share

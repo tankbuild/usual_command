@@ -33,3 +33,6 @@ cat channel_length.tsv | awk -F $'\t' 'BEGIN {OFS=FS} {print NR,$1,$2}' > channe
 
 #set output field separator
 cat ictalurus_punctatus_genome.fasta.out | awk -v OFS='\t' '{if (NR > 3) print $5,$6,$7}' | sort -k1,1 -k2,2n > ictalurus_punctatus_genome.gcmask.bed
+
+# find common first column of two files
+awk 'FNR==NR {a[$1]=$0; next}; $1 in a {print a[$1]}' mean_male_depth1.txt male_unique1.txt | sort -k2,2nr > male_unique_depth.txt

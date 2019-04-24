@@ -36,3 +36,6 @@ cat ictalurus_punctatus_genome.fasta.out | awk -v OFS='\t' '{if (NR > 3) print $
 
 # find common first column of two files
 awk 'FNR==NR {a[$1]=$0; next}; $1 in a {print a[$1]}' mean_male_depth1.txt male_unique1.txt | sort -k2,2nr > male_unique_depth.txt
+
+#How to grep exact matches from a file of a list of strings
+awk 'FNR==NR{a[$1];next} {for (i=1; i<=NF; i++) if ($i in a) print}' A B

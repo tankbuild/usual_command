@@ -4,6 +4,9 @@ join -j2 -o 1.1,1.2,1.3,2.3 <(sort -k1,1 -k2,2n duplicates_male.depth) <(sort -k
 # unix sort descending order
 cat channelcatfish_len.tsv | sort -t $'\t' -k2,2nr > channelcatfish_len_sorted.tsv
 
+# A way to ignore header lines in a UNIX sort
+(head -n 2 <file> && tail -n +3 <file> | sort) > newfile
+
 # linux system checking commands
 lsb_release -a
 cat /etc/*release

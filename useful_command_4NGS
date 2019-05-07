@@ -1,0 +1,13 @@
+1. Commands for extracting gene of specific regio from NCBI-gff file
+STEP1
+cat Xunyu.gff3 | grep -F -w scaffold104 | awk '$4 >= 5200000 && $4 <= 5700000' | grep mRNA | sort -k1,1  | \
+cut -f 9 | cut -d ';' -f 1 | cut -d '=' -f 2 | sort | \
+awk 'FNR==NR{a[$1];next} {for (i=1; i<=NF; i++) if ($i in a) print}' - xun.function.anno.xls | \
+sort > xiaoti_shengzhang_gene_scaffold104_LG13..xls
+STEP2
+cat Xunyu.gff3 | grep -F -w scaffold104 | awk '$4 >= 5200000 && $4 <= 5700000' | grep mRNA | sort -k9,9 | \
+awk 'NR < 9' | cut -f1,3,4,5 | paste - xiaoti_shengzhang_gene_scaffold104_LG13..xls \
+> xiaoti_shengzhang_gene_scaffold104_LG13.xls
+
+
+

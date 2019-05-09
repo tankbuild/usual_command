@@ -11,6 +11,15 @@ cat channelcatfish_len.tsv | sort -t $'\t' -k2,2nr > channelcatfish_len_sorted.t
 lsb_release -a
 cat /etc/*release
 
+# R permission issue
+It was a permission issue for me. First, I identified where the packages were installed using 
+installed.packages()[, c("Package", "LibPath")]. This outputs a long 2 column matrix with the
+names and locations of the packages. Then you will see where the offending packages are. 
+In my case, they were at /usr/lib/R/site-library and /usr/lib/R/library. 
+Then I changed the permission of these folders by chmod 
+(I used chmod -R 777 on the main R folder, 
+this is my personal computer, so security is not a big concern here I think)
+
 # Set path for software
 # set PATH for anaconda
 export PATH="/home/mwen/anaconda3/bin:$PATH"

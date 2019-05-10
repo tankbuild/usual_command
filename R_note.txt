@@ -1,0 +1,12 @@
+1. Use expression with a variable r
+
+assay <- "Some Assay"
+xlab <- bquote(.(assay) ~ AC50 ~ (mu*M))
+plot(0, xlab = xlab)
+
+Note: The ~ is a spacing operator and * means juxtapose the contents to the left and right of the operator.
+In bquote(), anything wrapped in .( ) will be looked up and replaced with the value of the named object; 
+so .(assay) will be replaced in the expression with Some Assay.
+
+* Try to set xlab to expression(bold(atop("Ameiurus", "melas")))
+

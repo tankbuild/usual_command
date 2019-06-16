@@ -42,3 +42,7 @@ awk 'FNR==NR{a[$1];next} {for (i=1; i<=NF; i++) if ($i in a) print}' A B
 
 #How to count coverage ratio of assembly mapping
 cat /home/mwen/work/genomes/goldfish/female/GCF_003368295.1_ASM336829v1_genomic.fna.fai | cut -f1 | grep 'NC_03' | while read id; do awk -v name=${id} -v sum=0 '{if ($0~name && $3 >=1) sum+=1} END {print name,sum}' depth_samtools.txt >> chr_cov_ratio.txt; done
+
+# How to print matched pattern
+cat female_run.svaba.indel.vcf | awk '!/#/' | awk 'match($0, /SPAN=[[:digi
+t:]]*/) {print substr($0, RSTART, RLENGTH) }'

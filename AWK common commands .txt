@@ -46,3 +46,7 @@ cat /home/mwen/work/genomes/goldfish/female/GCF_003368295.1_ASM336829v1_genomic.
 # How to print matched pattern
 cat female_run.svaba.indel.vcf | awk '!/#/' | awk 'match($0, /SPAN=[[:digi
 t:]]*/) {print substr($0, RSTART, RLENGTH) }'
+
+# Access captured groups from line pattern
+cat female_run.svaba.indel.vcf | gawk 'match($0, /(NC_039289.1).*(SPAN=[[:d
+igit:]]).*/, m) { print m[1],m[2]; }' | less

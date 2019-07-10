@@ -50,3 +50,6 @@ t:]]*/) {print substr($0, RSTART, RLENGTH) }'
 # Access captured groups from line pattern
 cat female_run.svaba.indel.vcf | gawk 'match($0, /(NC_039289.1).*(SPAN=[[:d
 igit:]]).*/, m) { print m[1],m[2]; }' | less
+
+# Replace sequence name in big fasta file by incremental numeric
+awk '{for(x=1;x<=NF;x++)if($x~/NC_[0-9]+.1/){sub(/NC_[0-9]+.1/,++i)}}1' ictalurus_lgs1.fasta > ictalurus_lgs2.fasta

@@ -47,6 +47,11 @@ cat /home/mwen/work/genomes/goldfish/female/GCF_003368295.1_ASM336829v1_genomic.
 cat female_run.svaba.indel.vcf | awk '!/#/' | awk 'match($0, /SPAN=[[:digi
 t:]]*/) {print substr($0, RSTART, RLENGTH) }'
 
+# Replace pattern 
+# gsub(/\./, ",", $2) for each input line, replace all the . in 2nd field with ,
+# "1" is an awk idiom to print contents of $0 (which contains the input record)
+awk 'match($0,/(LG)([[:digit:]]*).*/,m){if(m[2]>29) sub(/LG/,"HiC_scaffold_")}1' Ameiurus_melas.after_review.fa > Ameiurus_melas.after_review1.fa
+
 # Access captured groups from line pattern
 cat female_run.svaba.indel.vcf | gawk 'match($0, /(NC_039289.1).*(SPAN=[[:d
 igit:]]).*/, m) { print m[1],m[2]; }' | less

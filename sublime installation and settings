@@ -28,7 +28,7 @@ c. install anaconda, all autocomplete, sidebarseparator, gitgutter, sublimecodei
   "theme": "Default.sumbline-theme"
  }
  #################
- 4. goto anaconda user setting to add follow content
+ 4. goto anaconda default setting to add follow content
  #######################(to paste)
  {
   "pep8_ignore":

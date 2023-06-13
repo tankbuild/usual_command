@@ -58,3 +58,6 @@ igit:]]).*/, m) { print m[1],m[2]; }' | less
 
 # Replace sequence name in big fasta file by incremental numeric
 awk '{for(x=1;x<=NF;x++)if($x~/NC_[0-9]+.1/){sub(/NC_[0-9]+.1/,++i)}}1' ictalurus_lgs1.fasta > ictalurus_lgs2.fasta
+# calculate median value of a column
+less bsb_seq2_hic_psass_w100000_10000_depth.tsv | awk '{sum+=$3;a[x++]=$3;b[$3]++}b[$3]>Mode{Mode=$3}END{print "Mean: " sum/x "\nMedian: "a[int((x-1)/2)]"\nMode: " Mode}' | less
+
